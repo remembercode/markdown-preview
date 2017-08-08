@@ -115,7 +115,8 @@
 					$(item).attr("id","wow"+id);
 					$(item).addClass("wow_head");
 					$("#AnchorContent").css('max-height', ($(window).height() - 180) + 'px');
-					$("#AnchorContent").append('<li><a class="nav_item '+className+' anchor-link" onclick="return false;" href="#" link="#wow'+id+'">'+name+" · "+$(this).text()+'</a></li>');
+					//$("#AnchorContent").append('<li><a class="nav_item '+className+' anchor-link" onclick="return false;" href="#" link="#wow'+id+'">'+name+" · "+$(this).text()+'</a></li>');
+					$("#AnchorContent").append('<li><a class="nav_item '+className+' anchor-link" onclick="return false;" href="#" link="#wow'+id+'">'+""+" "+$(this).text()+'</a></li>');
 				});
 
 				$("#AnchorContentToggle").click(function(){
